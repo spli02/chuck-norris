@@ -1,0 +1,22 @@
+.box{
+    input{
+        border:none;
+        padding:0.5rem;
+        margin-left:1rem;
+        font-size:1rem;
+        border-bottom: 1px solid #D8D8D8;
+        width:230px;
+        &:focus{
+            outline: 0;
+            border-bottom: 1px solid #F15A24;
+        }
+    }
+}
+
+.search-result-container{
+    padding:2rem 1rem;
+    ul li{
+        margin-top:1rem;
+        line-height: 250%;
+    }
+}
