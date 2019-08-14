@@ -9,7 +9,6 @@ class App extends Component {
         super(props);
         this.state = {
             categories:[],
-            categoryInput: '',
             categoryResult:'',
             searchInput: '',
             inputResult:[],
@@ -32,12 +31,7 @@ class App extends Component {
 
     //search by categories ********************************
     handleCategoryClick = (event) => {
-        this.setState({
-            categoryInput: event.currentTarget.getAttribute('value'),
-        })
-        // console.log(this.state.categoryInput)//1店舗遅れる
-
-        fetch(`https://api.chucknorris.io/jokes/random?category=${this.state.categoryInput}`)
+        fetch(`https://api.chucknorris.io/jokes/random?category=${event.currentTarget.getAttribute('value')}`)
         .then(response => response.json())
         .then(data => {
             this.setState({
