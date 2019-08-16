@@ -61,7 +61,7 @@ class App extends Component {
     render() {
         return (
             <main>
-                <h1>Chunk Norris Jokes Search</h1>
+                <h1>Chuck Norris Jokes Search</h1>
                 <div className='app-container'>
                     <Category
                     categories={this.state.categories} 
