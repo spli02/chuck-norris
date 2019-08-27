@@ -60,8 +60,9 @@ class App extends Component {
     //for display ********************************
     render() {
         return (
+            <>
             <main>
-                <h1>Chuck Norris Jokes Search</h1>
+                <h1>- Chuck Norris Jokes Search -</h1>
                 <div className='app-container'>
                     <Category
                     categories={this.state.categories} 
@@ -76,6 +77,8 @@ class App extends Component {
                     />
                 </div>
             </main>
+            <footer>© 2019 yuricz.work, inspired by Chucknorris.io</footer>
+            </>
         )
     }
 }

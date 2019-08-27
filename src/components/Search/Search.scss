@@ -3,14 +3,22 @@
         border:none;
         padding:0.5rem;
         margin-left:1rem;
+        padding-left:2.5rem;
         font-size:1rem;
+        background-color:transparent;
         border-bottom: 1px solid #D8D8D8;
         width:230px;
         &:focus{
             outline: 0;
-            border-bottom: 1px solid #F15A24;
+            border-bottom: 1px solid #cc8e82;
         }
     }
+}
+
+.input-holder{
+    background: url('./img/search.svg') no-repeat scroll 10px 8px;
+    background-size:18px 18px;
+    background-color:transparent;
 }
 
 .search-result-container{

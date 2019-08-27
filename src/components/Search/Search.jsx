@@ -8,6 +8,7 @@ const Search = (props) => {
 
             <form>
                 <input
+                    className="input-holder"
                     type='text'
                     onChange={props.handleTyping}
                     value={props.searchInput}
