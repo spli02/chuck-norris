@@ -8,7 +8,7 @@ main{
     }
 }
 
-.app-container {
+.app__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,4 +21,14 @@ footer{
     margin:0 2rem;
     font-size: 0.8rem;
     letter-spacing: 2px;
+}
+
+@mixin boxSetting() {
+    border-top: #C2CDC4 1px solid;
+    margin: 1rem;
+    padding: 0.3rem;
+    text-align: left;
+    h2{
+        letter-spacing: 1px;
+    }
 }

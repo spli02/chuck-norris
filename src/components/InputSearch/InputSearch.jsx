@@ -1,14 +1,13 @@
 import React from 'react'
-import './Search.scss'
+import './InputSearch.scss'
 
-const Search = (props) => {
+const InputSearch = (props) => {
     return (
-        <div className='box'>
+        <div className='inputSearch'>
             <h2>2. Search By Input</h2>
 
             <form>
                 <input
-                    className="input-holder"
                     type='text'
                     onChange={props.handleTyping}
                     value={props.searchInput}
@@ -16,7 +15,7 @@ const Search = (props) => {
                 />
             </form>
 
-            <div className='search-result-container'>
+            <div className='inputSearch__result'>
                 {props.inputResult[0] ? 
                 <ul>
                 {props.inputResult.slice(0,25).map((item) =>
@@ -28,4 +27,4 @@ const Search = (props) => {
     )
 }
 
-export default Search
+export default InputSearch

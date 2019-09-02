@@ -1,12 +1,12 @@
 import React from 'react'
-import './Category.scss'
+import './CategorySearch.scss'
 
-const Category = (props) => {
+const CategorySearch = (props) => {
     return (
-        <div className="box">
+        <div className="categorySearch">
             <h2>1. Search By Category</h2>
             
-            <div className="category-search-container">
+            <div className="categorySearch__categories">
                 <ul>
                 {props.categories.map((category,i) =>{
                     return (
@@ -18,11 +18,11 @@ const Category = (props) => {
                 </ul>
             </div>
 
-            <div className="category-result-container">
+            <div className="categorySearch__result">
                 {props.categoryResult.value ? <ul><li>{props.categoryResult.value}</li></ul> : ''}
             </div>
         </div>
     )
 }
 
-export default Category;
+export default CategorySearch;

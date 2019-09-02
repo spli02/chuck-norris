@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './App.scss'
 
-import Search from '../Search/Search.jsx'
-import Category from '../Category/Category.jsx'
+import InputSearch from '../InputSearch/InputSearch.jsx'
+import CategorySearch from '../CategorySearch/CategorySearch.jsx'
 
 class App extends Component {
     constructor(props) {
@@ -63,21 +63,21 @@ class App extends Component {
             <>
             <main>
                 <h1>- Chuck Norris Jokes Search -</h1>
-                <div className='app-container'>
-                    <Category
+                <div className='app__container'>
+                    <CategorySearch
                     categories={this.state.categories} 
                     handleCategoryClick={this.handleCategoryClick}
                     categoryResult={this.state.categoryResult}
                     />
 
-                    <Search
+                    <InputSearch
                     handleTyping={this.handleTyping}
                     searchInput={this.state.searchInput}
                     inputResult={this.state.inputResult}
                     />
                 </div>
             </main>
-            <footer>© 2019 yuricz.work, inspired by Chucknorris.io</footer>
+            <footer>Inspired by Chucknorris.io</footer>
             </>
         )
     }
