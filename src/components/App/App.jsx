@@ -77,7 +77,7 @@ class App extends Component {
                     />
                 </div>
             </main>
-            <footer>Inspired by Chucknorris.io</footer>
+            <footer>© 2019 yuricz.work, inspired by Chucknorris.io</footer>
             </>
         )
     }
