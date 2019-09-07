@@ -1,14 +1,14 @@
 @import "../App/App.scss";
 
-.categorySearch{
+.categorySearch {
     @include boxSetting();
     &__categories
-    ul{
+    ul {
         display: flex;
         flex-wrap: wrap;
         list-style-type: none;
         padding: 0;
-        li{
+        li {
             width: 100px;
             margin: 1rem;
             padding: 5px 10px;
@@ -20,7 +20,7 @@
             }
         }
     }
-    &__result{
+    &__result {
         padding: .5rem 1rem;
         line-height: 250%;
     }

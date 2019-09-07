@@ -1,10 +1,10 @@
-main{
-    text-align: center;
+main {
     padding: 2rem;
-    h1{
-        letter-spacing: 3px;
+    text-align: center;
+    h1 {
         margin: 1rem;
-        color: #F15A24;
+        color: #f15a24;
+        letter-spacing: 3px;
     }
 }
 
@@ -14,21 +14,21 @@ main{
     justify-content: center;
 }
 
-footer{
-    padding: .5rem;
+footer {
     margin: 0 2rem;
+    padding: .5rem;
+    border-top: 1px dotted #c2cdc4;
     font-size: .8rem;
-    letter-spacing: 2px;
     text-align: center;
-    border-top: 1px dotted #C2CDC4;
+    letter-spacing: 2px;
 }
 
 @mixin boxSetting() {
     margin: 1rem;
     padding: .3rem;
+    border-top: #c2cdc4 1px solid;
     text-align: left;
-    border-top: #C2CDC4 1px solid;
-    h2{
+    h2 {
         letter-spacing: 1px;
     }
 }
