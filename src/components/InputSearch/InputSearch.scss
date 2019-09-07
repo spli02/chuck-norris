@@ -8,13 +8,13 @@
         padding: .5rem;
         padding-left: 2.5rem;
         border: none;
-        border-bottom: 1px solid #D8D8D8;
+        border-bottom: 1px solid $gray;
         background: url('./img/search.svg') no-repeat scroll 10px 8px;
         background-size: 18px 18px;
         background-color: transparent;
         font-size: 1rem;
         &:focus {
-            border-bottom: 1px solid #F15A24;
+            border-bottom: 1px solid $orange;
             outline: 0;
         }
     }
